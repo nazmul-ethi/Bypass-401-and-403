@@ -19,3 +19,8 @@
   ![4](https://github.com/nazmul-ethi/Bypass-401-and-403/assets/130249045/c2a4ca5a-44f2-48d1-a868-40d53e81dfff)
 
 
+* Try to know as much as you can about the target technology. Good recon is a key, there are some technology-specific hacks, e.g. Spring in some older versions have specific workaround related to useSuffixPatternMatch. If set to true (default) /admin would also match /admin[.].*
+
+  * When nothing works try less common techniques such as exploiting hop-to-hop headers - this is my favorite method, and I will write a separate thread about it. More about this technique can be found in our article: https://vidocsecurity.com/blog/401-and-403-bypass-how-to-do-it-right/
+  
+  * List of payloads for fuzzing is available in our Module Library - you can use them to automate work using Vidoc Research, method/headers fuzzing: https://app.vidocsecurity.com/public-library/65107c81-587e-4eff-b243-3afb05620fb8 and path fuzzing: https://app.vidocsecurity.com/public-library/5a838688-86db-4732-97af-cff51e663d8c
